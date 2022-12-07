@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>${'team'}</h2>
+<tr th:each="teams : ${team}">
+    <td th:text="${teams.t_code}"></td>
+    <td th:text="${teams.t_intro}"></td>
+</tr>
+</body>
+</html>
